@@ -4,4 +4,3 @@ logs
 .git
 .gitignore
 npm-debug.log*
-.env

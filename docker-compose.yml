@@ -1,17 +1,15 @@
-version: "3.9"
-
 services:
   backend:
     build: ./backend
     container_name: my-express-backend
-    image: <DOCKERHUB_USERNAME>/my-express-backend:latest
+    image: my-express-backend:latest
     ports:
-      - "4000:4000"
+      - "3000:3000"
 
   frontend:
     build: ./frontend
     container_name: my-quasar-frontend
-    image: <DOCKERHUB_USERNAME>/my-quasar-frontend:latest
+    image: my-quasar-frontend:latest
     ports:
       - "8080:80"
     depends_on:
